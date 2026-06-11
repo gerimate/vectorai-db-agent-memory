@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+
+# Environment variables — copy .env.example and fill in
+.env
+
+# VectorAI DB runtime data volume (JWT secrets, Argon2 salts, FAISS indexes, logs)
+local_data/
+
+# Tests
+tests/
+
+# Pytest cache
+.pytest_cache/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
