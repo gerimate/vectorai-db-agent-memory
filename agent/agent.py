@@ -25,8 +25,7 @@ class Agent:
         past_memories = self.memory.recall(
             query_vector=query_vec,
             limit=5,
-            score_threshold=0.50,
-            min_importance=0.5,
+            score_threshold=0.30,
         )
         system_prompt = self._build_system_prompt(past_memories)
         self.conversation.append({"role": "user", "content": user_message})
